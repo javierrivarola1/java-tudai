@@ -4,16 +4,9 @@ public class Actividad4 {
 
 	public static void main(String[] args) {
 
-		int num1 = 10;
-		int num2 = 12;
-		int num3 = 25;
-		int num4 = 5;
-		int num5 = 4;
-		
+		int num1 = 10, num2 = 12, num3 = 25, num4 = 5, num5 = 4;
 
-		
-System.out.println("4" + ", " + "5" + ", " + "25" + ", " + "12" + ", " + "10");
+		System.out.println(num1 + " " + num2 + " " + num3 + " " + num4 + " " + num5);
 	}
-
 
 }

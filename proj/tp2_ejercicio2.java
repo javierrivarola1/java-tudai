@@ -31,12 +31,12 @@ public class tp2_ejercicio2 {
 
 				if (((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0)))) {
 
-					System.out.println("El año es bisiesto");
+					System.out.println("Tiene 29 días");
 
 				}
 
 				else {
-					System.out.println("No es un año bisiesto");
+					System.out.println("Tiene 28 días");
 				}
 			}
 				;
