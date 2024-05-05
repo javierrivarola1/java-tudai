@@ -12,7 +12,7 @@ public class ej3 {
         try {
             System.out.println("Ingresar un número MAYOR  a 50");
             numero = Integer.valueOf(entrada.readLine());
-            while (numero <= MIN) {
+            while (numero < MIN) {
                 System.out.println("Ingresar un número valido");
                 numero = Integer.valueOf(entrada.readLine());
             }
