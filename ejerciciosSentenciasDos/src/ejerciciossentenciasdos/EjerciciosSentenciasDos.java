@@ -3,7 +3,8 @@ package ejerciciossentenciasdos;
 
 import java.util.Scanner;
 
-
+//Pedir un numero para ver que mes cae, si justo cae 2 y el año es biniesto hay que mostrarlo en pantalla.
+//Resultado de esto, ver día, año y mes.
 public class EjerciciosSentenciasDos {
 
 
