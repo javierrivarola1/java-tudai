@@ -25,7 +25,12 @@ public class EjercicioArrays5 {
         for (int i = 0; i < MAX; i++) {
             System.out.println(array[i]);
         }
-        
+
+         for (int i = 0; i < MAX / 2; i++) {
+            char temp = arreglo[i];
+            arreglo[i] = arreglo[MAX - 1 - i];
+            arreglo[MAX - 1 - i] = temp;
+        }
         
         
     }
