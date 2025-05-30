@@ -1,6 +1,6 @@
 /*
 Dado un arreglo de caracteres, determinar si en el arreglo existe al
-menos una letra repetida. EJERCICIO 
+menos una letra repetida. EJERCICIO9 
  */
 package ejercicioarray;
 
@@ -10,7 +10,7 @@ public class EjercicioArray {
 
     public static void main(String[] args) {
         final int CANTIDAD_LETRAS = 8;
-        char[] letras = {'d', 'b', 'c', 'e', 'f', 'h', 'z', 'a'};
+        char[] letras = {'d', 'b', 'b', 'e', 'f', 'h', 'z', 'a'};
 
         boolean hayRepetida = contieneRepetidas(letras, CANTIDAD_LETRAS);
 
@@ -18,12 +18,14 @@ public class EjercicioArray {
     }
 
     public static boolean contieneRepetidas(char[] arregloLetras, int CANTIDAD_LETRAS) {
-        for (int i = 0; i < CANTIDAD_LETRAS - 1; i++) {
-            for (int j = i + 1; j < CANTIDAD_LETRAS; j++) {
+        for (int i = 0; i < CANTIDAD_LETRAS; i++) {
+            for (int j = 0; j < CANTIDAD_LETRAS; j++) {
                 //Mostramos la comparación actual
                 System.out.println("Comparando índice i " + i + " con índice j " + j + " ");
+                
+                
 
-                if (arregloLetras[i] == arregloLetras[j]) {
+                if (i != j && arregloLetras[i] == arregloLetras[j]) {
                     System.out.println("Repetido encontrado: " + arregloLetras[i]);
                     return true;
                 }
@@ -32,8 +34,8 @@ public class EjercicioArray {
         return false;
     }
 
-    public static void mostrarResultado(boolean tieneRepetida) {
-        if (tieneRepetida) {
+    public static void mostrarResultado(boolean hayRepetida) {
+        if (hayRepetida) {
             System.out.println("El arreglo contiene al menos una letra repetida.");
         } else {
             System.out.println("El arreglo no tiene letras repetidas.");
