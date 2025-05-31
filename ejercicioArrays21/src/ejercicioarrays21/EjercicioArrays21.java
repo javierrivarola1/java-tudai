@@ -1,4 +1,3 @@
-
 package ejercicioarrays21;
 
 
@@ -18,7 +17,7 @@ public class EjercicioArrays21 {
 
     public static int filtrarImpares(int[] array, int cantidadElementos) {
         for (int i = 0; i < cantidadElementos; i++) {
-            if (array[i] % 2 == 0) { // Si es par, lo eliminamos
+            if (array[i] % 2 == 0) { 
                 cantidadElementos = corrimientoIzquierda(array, i, cantidadElementos);
               
             }
@@ -30,7 +29,7 @@ public class EjercicioArrays21 {
         for (int j = i; j < cantidadElementos - 1; j++) {
             array[j] = array[j + 1]; // Movemos elementos hacia la izquierda
         }
-        cantidadElementos--; // Reducimos la cantidad de elementos válidos
+        cantidadElementos--; // Reducimos la cantidad de elementos validos
         return cantidadElementos;
     }
 
@@ -41,3 +40,4 @@ public class EjercicioArrays21 {
         System.out.println();
     }
 }
+
